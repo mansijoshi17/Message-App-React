@@ -10,7 +10,7 @@ class ChatHistory extends React.Component {
 
     render() {
 
-        const Id = localStorage.getItem("Id");
+        const Id = parseInt(localStorage.getItem("Id"));
 
         console.log("history", Id);
 

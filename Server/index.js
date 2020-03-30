@@ -7,7 +7,7 @@ const typeDefs = gql`
   # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
   type chathistory{
-      parentid : String
+      parentid : Int
       type : String
       name : String
       message : String
@@ -28,7 +28,7 @@ const typeDefs = gql`
   }
 
   input MessageInput {
-    parentid : String
+    parentid : Int
     type : String
     name : String
     message : String

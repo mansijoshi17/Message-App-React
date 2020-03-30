@@ -9,7 +9,7 @@ import gql from 'graphql-tag';
 class ChatHeader extends React.Component {
     render() {
 
-        const Id = localStorage.getItem("Id");
+        const Id = parseInt(localStorage.getItem("Id"));
         return (
             <ChatHeaderComp>
                 <div className="ui massive horizontal divided list">

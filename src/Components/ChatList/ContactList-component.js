@@ -50,7 +50,7 @@ class ContactList extends React.Component {
                                 <div class="ui text loader">Loading</div>
                             </div>;
                             if (error) return <p>Error :(</p>;
-                            //Converted all the name into lowecase because when we enter in input its in lowercase.
+                            //Converted all the name into lowecase because when we enter in input its in lowercase and then filtered the list.
                             return data.chats.filter(node => this.state.search === '' || node.name.toLowerCase().includes(this.state.search)).map((node) => {
                                 return <div className="item" key={node.id} onClick={() => getIdHandler(node.id)}>
                                     <img className="ui avatar image" alt="person" src={node.profileimg} style={{ fontSize: '25px', border: '2px solid' }} />
